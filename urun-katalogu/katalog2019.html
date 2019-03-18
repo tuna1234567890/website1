@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<base url>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://dosya.ersag.com.tr/upload/media/katalog_2019_tr/mobile/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="description" content="Yeni Nesil Temizlik, Kozmetik Ürünleri, Gıda Takviyeleri ve Sağlıklı Saklama Kapları">
+
+<title>Ersağ Güncel Kataloğu 2019</title>
+<link rel="stylesheet" href="style/style.css" />
+<script src="javascript/main.js"></script>
+
+</head>	
+<body>
+	
+
+	<script>
+		function kaydir()
+		{
+			setTimeout(function(){
+				document.querySelector('#currentPageIndexTextField').size='7';
+				document.querySelector('#btnLeft').style.right='182px';
+				document.querySelector('#btnFirst').style.right='226px';
+				document.querySelector('#btnZoom').style.right='270px';
+				document.querySelector('#btnAutoPlay').style.right='359px';
+				document.querySelector('#btnThumb').style.right='404px';
+				document.querySelector('#btnShare').style.right='449px';
+				
+				document.querySelector('#Anasayfa').style.right='318px';
+			},200);
+		}
+		window.onload = function () {
+			
+			var parent = document.getElementById('btnFirst');
+			parent.outerHTML = parent.outerHTML + '<div title="Anasayfa" id="Anasayfa" class="numbering" style="top: 0px; right: 318px;"><a href="C:\/Users\/xroot\/Desktop\/ersag2\/ersag2\/www.ersagkayitol.com\/index.html"><img style="width: 38px;" src="C:\/Users\/xroot\/Desktop\/ersag2\/ersag2\/www.ersagkayitol.com\/urun-katalogu\/anasayfa_icon.png"></a></div>';
+			
+			kaydir();
+			
+		}
+		
+		window.onresize = function () {
+			kaydir();
+		};
+	</script>
+</body>
+</html>
